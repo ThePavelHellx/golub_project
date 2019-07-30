@@ -5,13 +5,13 @@ body {
 }
 
 .wrapper {
-	max-width: 1170px;
+	
 	margin: 0 auto;
 }
 
 header {
 	position: absolute;
-	top: 84px;
+	top: 10px;
 	left: 0;
 	right: 0;
 	z-index: 99;
@@ -19,8 +19,9 @@ header {
 
 .header-wrap {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	
 }
 
 .banner {
@@ -30,11 +31,12 @@ header {
 }
 
 .logo a {
+	margin: 50px 0 0 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 	color: #ffffff;
@@ -42,7 +44,6 @@ header {
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 45px;
-	text-transform: uppercase;
 }
 
 .menu {
@@ -78,7 +79,7 @@ header {
 	line-height: 20px;
 	color: rgb(255, 255, 255);
 	position: absolute;
-	top: 0px;
+	top: -2px;
 	left: 100%;
 	margin-left: 6px;
 }
@@ -88,7 +89,7 @@ header {
 }
 
 .informer {
-	display: flex;
+	
 	margin-top: 60px;
 	text-align: center;
 	font-size: 16px;
@@ -120,8 +121,8 @@ opacity: 0.7;
 }
 
 .content_item {
-	width: 370px;
-	height: 270px;
+	width: 480px;
+	height: 320px;
 	margin: 0 20px;
 	margin-top: 50px;
 	box-shadow: 0 0 10px rgba(99, 110, 114,0.15);
@@ -129,8 +130,8 @@ opacity: 0.7;
 
 
 .content_img {
-	width: 370px;
-	height: 270px;
+	width: 480px;
+	height: 320px;
 }
 
 .button {
@@ -168,4 +169,18 @@ opacity: 0.7;
  font:20px "Open Sans", Arial; 
  font-weight:bold; 
  color:#fc5c65; 
+}
+
+ul {
+	padding-left: 0px;
+}
+
+#first_menu_item {
+	margin-left: 0px;
+}
+
+a.disabled {
+pointer-events: none; /* делаем элемент неактивным для взаимодействия */
+cursor: default; /*  курсор в виде стрелки */
+color: #888;/* цвет текста серый */
 }
