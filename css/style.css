@@ -24,7 +24,7 @@ header {
 }
 
 .banner {
-	height: 1100px;
+	height: 600px;
 	text-align: center;
 	background-color: #34495e;
 }
@@ -85,4 +85,22 @@ header {
 
 .menu-item:last-child:after {
 	display: none;
+}
+
+.informer {
+	display: flex;
+	margin-top: 60px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+h1 {
+	color: #fc5c65;
+}
+
+.opacity {
+opacity: 0.7;
 }
