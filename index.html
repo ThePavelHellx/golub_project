@@ -14,14 +14,20 @@
  <header>
     <div class="wrapper">
       <div class="header-wrap"> 
-        <div class="logo"><a href="#"><img src="img/58ce2f0c32c3315ae567c7b0.png" alt="logo " width="400px"></a></div>
+        <div class="logo"><a href="#"><img src="img/58ce2f0c32c3315ae567c7b0.png" alt="" width="400px"></a></div>
         <nav class="navigation">
           <ul class="menu">
             <li class="menu-item">
-              <a href="" class="menu__link">Регистрация</a>
+              <a href="" class="menu__link">Главная</a>
             </li>
             <li class="menu-item">
-              <a href="" class="menu__link">Вход</a>
+              <a href="" class="menu__link">Проекты</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu__link">О нас</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -32,16 +38,39 @@
             <h5 class="opacity"> Свобода — универсалия культуры субъектного ряда, фиксирующая возможность деятельности и поведения в условиях отсутствия внешнего целеполагания</h5>
           </div>
         </div>
+        <a href="#go" class="button"/>КУРЛЫК</a>
     </div>
  </header>
+ <section class="banner">
+ </section>
+
+ <section class="wrap-content">
+   <div class="content" id="go">
+     <div class="content_item"><span></span><img class="content_img" src="img/1.jpg" alt=""></div>
+     <div class="content_item"><span></span><img class="content_img" src="img/2.jpg" alt=""></div>
+     <div class="content_item"><span></span><img class="content_img" src="img/3.jpg" alt=""></div>
+     <div class="content_item"><span></span><img class="content_img" src="img/1.jpg" alt=""></div>
+     <div class="content_item"><span></span><img class="content_img" src="img/2.jpg" alt=""></div>
+     <div class="content_item"><span></span><img class="content_img" src="img/3.jpg" alt=""></div>
+   </div>
+ </section>
 
 
- <div class="banner"></div>
 
 
-<script
-src="https://code.jquery.com/jquery-1.12.4.min.js"
-integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 666);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
 </body>
 </html>
